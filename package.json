@@ -1,0 +1,26 @@
+{
+  "name": "site",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "node-reset-scss": "^1.0.1",
+    "node-sass-chokidar": "^0.0.3",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-scripts": "1.0.13"
+  },
+  "scripts": {
+    "build-css": "node-sass-chokidar src/ -o src/ --include-path ./src --include-path ./node_modules",
+    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive --include-path ./src --include-path ./node_modules",
+    "start-js": "react-scripts start",
+    "build-js": "react-scripts build",
+    "start": "npm-run-all -p watch-css start-js",
+    "build": "npm run build-css && npm run build-js",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "create-react-app": "^1.4.0",
+    "npm-run-all": "^4.1.1"
+  }
+}
