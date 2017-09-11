@@ -6,7 +6,7 @@
 # testing
 /coverage
 
-# build products
+# production
 /build
 /src/**/*.css
 
