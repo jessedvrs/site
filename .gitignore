@@ -7,7 +7,6 @@
 /coverage
 
 # build products
-/public
 /build
 /src/**/*.css
 
