@@ -1,0 +1,22 @@
+.Header {
+    @import 'variables/colors.scss';
+
+    text-align: center;
+    padding-top: 100px;
+
+    &__container {
+        display: inline-block;
+        text-align: left;
+    }
+
+    h1 {
+        font-size: 54px;
+        font-weight: normal;
+    }
+
+    &__subtitle {
+        color: $color-subtitle-text;
+        font-size: 28px;
+        margin-top: 40px - 10px;
+    }
+}
